@@ -19,7 +19,7 @@
             return "error";   
             }
             // first 10 days hotel cost 100 doller
-            if(numberOfdays <= 10){
+            else if(numberOfdays <= 10){
             cost =  numberOfdays * 100;
             return cost;
             }
@@ -61,7 +61,7 @@
     var Cost = budgetCalculator(numberOfWatch, numberOfMobile, numberOfLaptop);
     console.log("Total cost of my shopping: ",Cost,"Doller");
 
-    var numberOfDaysInHotel = 12;
+    var numberOfDaysInHotel = 22;
     var myHotelRent = hotelCost(numberOfDaysInHotel);
     console.log("My hotel rent: ",myHotelRent);
 
